@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Global Gateway Overseas – Immigration Consultancy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <div class="topbar-inner">
+      <div class="topbar-left">
+        <div class="topbar-chip">
+          <span>📍</span>
+          <span>Hyderabad · India</span>
+        </div>
+        <div class="topbar-chip">
+          <span>⏰</span>
+          <span>Mon–Sat · 10 AM – 7 PM</span>
+        </div>
+      </div>
+      <div class="topbar-right">
+        <div class="topbar-chip">
+          <span>📞</span><span>+91 9347856661 </span>
+        </div>
+        <div class="topbar-chip">
+          <span>✉️</span><span>info@globalgateway.com</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <header>
+    <nav class="nav">
+      <div class="nav-left">
+        <div class="logo-circle">GNO</div>
+        <div class="brand-text">
+          <strong>Global North Overseas</strong>
+          <span>Immigration consultants</span>
+        </div>
+      </div>
+
+      <div class="nav-links" id="nav-links">
+       <button onclick="showSection('home')" data-target="home">Home</button>
+        <button onclick="showSection('about')" data-target="about">About</button>
+        <button onclick="showSection('services')" data-target="services">Services</button>
+        <button onclick="showSection('countries')" data-target="countries">Countries</button>
+        <button onclick="showSection('visa-types')" data-target="visa-types">Visa Types</button>
+        <button onclick="showSection('resources')" data-target="resources">Resources</button>
+        <button onclick="showSection('contact')" data-target="contact">Contact</button>
+        <button onclick="showSection('blog')" data-target="blog">Blog</button>
+      </div>
+
+      <button class="nav-cta" onclick="showSection('contact')">Free Consultation</button>
+
+      <div class="nav-toggle">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HOME PAGE -->
+    <section id="home" class="page-section active">
+      <!-- HERO -->
+      <div class="hero">
+        <div class="hero-grid">
+          <div>
+            <div class="badge-pill">
+              <span class="dot"></span>
+              Your gateway to global opportunities
+            </div>
+            <h1 class="hero-title">
+              Study, work & settle abroad with <span>trusted guidance.</span>
+            </h1>
+            <p class="hero-text">
+              We help students and professionals navigate the complete immigration process –
+              from choosing the right country to submitting a strong visa file.
+            </p>
+
+            <div class="hero-actions">
+              <button class="btn-primary" onclick="showSection('contact')">
+                Get free assessment
+              </button>
+              <button class="btn-outline" onclick="showSection('services')">
+                View immigration services
+              </button>
+            </div>
+
+            <p class="hero-note">
+              🔒 No charge for the first consultation. We only work with genuine, transparent
+              applications.
+            </p>
+
+            <form class="hero-form" onsubmit="event.preventDefault(); showSection('contact');">
+              <input type="email" placeholder="Enter your email for a callback" required />
+              <button class="btn-primary" type="submit">Request a call</button>
+            </form>
+          </div>
+
+          <div class="hero-right">
+            <div class="hero-photo">
+              😊
+            </div>
+            <div class="hero-right-text">
+              Get a quick profile review to know your chances for Canada, Australia, UK, USA and more.
+            </div>
+            <div class="hero-guarantee">
+              ✅ 100% honest guidance · No fake promises
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- STATS -->
+      <div class="stats-row">
+        <div class="stat-card">
+          <div class="stat-label">Happy Clients</div>
+          <div class="stat-value">5000+</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Years of Experience</div>
+          <div class="stat-value">15+</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Countries Covered</div>
+          <div class="stat-value">10+</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Support</div>
+          <div class="stat-value">24/7</div>
+        </div>
+      </div>
+
+      <!-- IMMIGRATION SERVICES (CARDS) -->
+      <section>
+        <div class="section-header">
+          <div class="eyebrow">Our Immigration Services</div>
+          <h2 class="section-title">Complete solutions for your journey</h2>
+          <p class="section-subtitle">
+            From student visas to permanent residency, we cover all major immigration categories with a
+            structured, document-first approach.
+          </p>
+        </div>
+
+        <div class="grid grid-3">
+          <article class="card">
+            <div class="icon-circle">🎓</div>
+            <h3>Student Visa</h3>
+            <p>
+              Course & university shortlisting, SOP guidance, applications and visa filing for
+              top destinations.
+            </p>
+            <button class="btn-outline" onclick="showSection('services')">Learn more</button>
+          </article>
+
+          <article class="card">
+            <div class="icon-circle">💼</div>
+            <h3>Work Visa & PR</h3>
+            <p>
+              Skilled migration, work permits and permanent residency options based on your profile.
+            </p>
+            <button class="btn-outline" onclick="showSection('visa-types')">Explore options</button>
+          </article>
+
+          <article class="card">
+            <div class="icon-circle">👨‍👩‍👧</div>
+            <h3>Visitor & Dependent</h3>
+            <p>
+              Visitor, spouse and dependent visa support with clear document checklists.
+            </p>
+            <button class="btn-outline" onclick="showSection('services')">See details</button>
+          </article>
+        </div>
+      </section>
+
+      <!-- WHY CHOOSE -->
+      <section class="section-soft">
+        <div class="section-header section-header-left">
+          <div class="eyebrow">Why Choose Global Gateway?</div>
+          <h2 class="section-title">We focus on clarity and compliance</h2>
+          <p class="section-subtitle">
+            Our team combines real-world experience with up-to-date immigration knowledge to give you
+            realistic advice – not shortcuts.
+          </p>
+        </div>
+
+        <div class="grid grid-3">
+          <div class="card">
+            <div class="icon-circle">👨‍💼</div>
+            <h3>Expert team</h3>
+            <p>Experienced counselors to guide you at each step.</p>
+          </div>
+          <div class="card">
+            <div class="icon-circle">✅</div>
+            <h3>High success rate</h3>
+            <p>Strong focus on documents and transparent processes.</p>
+          </div>
+          <div class="card">
+            <div class="icon-circle">🌍</div>
+            <h3>Global reach</h3>
+            <p>Major destinations including Canada, Australia, UK, USA & more.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- COUNTRIES PREVIEW -->
+      <section class="countries-preview">
+        <div class="section-header">
+          <div class="eyebrow">Countries We Serve</div>
+          <h2 class="section-title">Top study & migration destinations</h2>
+        </div>
+
+        <div class="grid grid-4">
+          <div class="country-card">
+            <div class="code">US</div>
+            <h3>United States</h3>
+            <p class="country-desc">World-class universities and research.</p>
+          </div>
+          <div class="country-card">
+            <div class="code">CA</div>
+            <h3>Canada</h3>
+            <p class="country-desc">Study, work and PR friendly policies.</p>
+          </div>
+          <div class="country-card">
+            <div class="code">AU</div>
+            <h3>Australia</h3>
+            <p class="country-desc">High quality of life and education.</p>
+          </div>
+          <div class="country-card">
+            <div class="code">UK</div>
+            <h3>United Kingdom</h3>
+            <p class="country-desc">Historic universities & post-study options.</p>
+          </div>
+        </div>
+
+        <div class="centered">
+          <button class="btn-outline" onclick="showSection('countries')">
+            View all countries
+          </button>
+        </div>
+      </section>
+
+      <!-- TESTIMONIAL PREVIEW -->
+      <section class="testimonials-preview">
+        <div class="section-header">
+          <div class="eyebrow">What Our Clients Say</div>
+          <h2 class="section-title">Real stories from real journeys</h2>
+        </div>
+
+        <div class="grid grid-2">
+          <article class="card">
+            <p class="testimonial-text">
+              “The team helped me from shortlisting courses in Canada to visa approval.
+              Communication was clear, and every doubt was answered.”
+            </p>
+            <p class="testimonial-meta">
+              — Aditi R · MSc Data Science, Canada
+            </p>
+          </article>
+
+          <article class="card">
+            <p class="testimonial-text">
+              “Very honest feedback on my PR chances. They suggested realistic options and
+              built a strong file for my application.”
+            </p>
+            <p class="testimonial-meta">
+              — Prakash K · Skilled Worker, Australia
+            </p>
+          </article>
+        </div>
+      </section>
+    </section>
+
+    <!-- ABOUT PAGE -->
+    <section id="about" class="page-section">
+      <section>
+        <div class="section-header">
+          <div class="eyebrow">About Global Gateway Overseas</div>
+          <h2 class="section-title">Guiding ambitions beyond borders</h2>
+          <p class="section-subtitle">
+            We are a boutique immigration and overseas education consulting company focused on
+            ethical, transparent guidance for students and professionals.
+          </p>
+        </div>
+
+        <div class="grid grid-2">
+          <div class="card">
+            <h3>Our Story</h3>
+            <p>
+              Global Gateway Overseas was started by a small team of counselors who saw how confusing
+              and overwhelming immigration could be. Our goal is to simplify the process without
+              overselling dreams.
+            </p>
+            <p class="card-paragraph">
+              Today we support clients across India with personalized counseling, clear timelines and
+              structured document guidance.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Our Mission</h3>
+            <p>
+              To make international education and migration planning accessible, honest and structured
+              – so you always know what is happening with your application.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-values">
+        <div class="section-header">
+          <div class="eyebrow">Our Core Values</div>
+          <h2 class="section-title">The way we work with you</h2>
+        </div>
+
+        <div class="grid grid-3">
+          <div class="card">
+            <div class="icon-circle">🤝</div>
+            <h3>Integrity</h3>
+            <p>We only take profiles we believe we can genuinely support.</p>
+          </div>
+          <div class="card">
+            <div class="icon-circle">📚</div>
+            <h3>Clarity</h3>
+            <p>Every step, requirement and fee is explained in simple language.</p>
+          </div>
+          <div class="card">
+            <div class="icon-circle">📈</div>
+            <h3>Progress</h3>
+            <p>Regular updates and milestones so you never feel lost.</p>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- SERVICES PAGE -->
+    <section id="services" class="page-section">
+      <section>
+        <div class="section-header">
+          <div class="eyebrow">Our Immigration Services</div>
+          <h2 class="section-title">Everything you need in one place</h2>
+          <p class="section-subtitle">
+            We structure your entire journey into clear stages – counseling, documentation,
+            applications and visa filing.
+          </p>
+        </div>
+
+        <div class="grid">
+          <article class="card">
+            <h3>Student Visa Services</h3>
+            <ul class="list">
+              <li>Profile & course counselling</li>
+              <li>University shortlist and applications</li>
+              <li>SOP / LOR drafting support</li>
+              <li>Financial & document guidance</li>
+              <li>Visa file preparation</li>
+            </ul>
+            <button class="btn-outline btn-list">Talk to a student expert</button>
+          </article>
+
+          <article class="card">
+            <h3>Work Visa & PR</h3>
+            <ul class="list">
+              <li>Eligibility assessment</li>
+              <li>Points & score guidance</li>
+              <li>Document checklist and templates</li>
+              <li>Application lodgement support</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Visitor, Dependent & Others</h3>
+            <ul class="list">
+              <li>Tourist & business visit visas</li>
+              <li>Spouse / dependent visa support</li>
+              <li>Document and cover letter guidance</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="services-process">
+        <div class="section-soft">
+          <div class="section-header section-header-left">
+            <h2 class="section-title">Our Proven Process</h2>
+            <p class="section-subtitle">
+              A simple 4-step approach designed to keep you informed and confident.
+            </p>
+          </div>
+
+          <div class="timeline">
+            <div class="timeline-step">
+              <div class="timeline-badge">1</div>
+              <div>
+                <strong>Profile assessment</strong>
+                <p class="timeline-text">
+                  We understand your goals, academics, work history and budget.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-step">
+              <div class="timeline-badge">2</div>
+              <div>
+                <strong>Planning & shortlist</strong>
+                <p class="timeline-text">
+                  Countries, intakes and courses are shortlisted based on realistic options.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-step">
+              <div class="timeline-badge">3</div>
+              <div>
+                <strong>Applications & documents</strong>
+                <p class="timeline-text">
+                  We help you prepare and submit applications and collect documents.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-step">
+              <div class="timeline-badge">4</div>
+              <div>
+                <strong>Visa filing & follow-up</strong>
+                <p class="timeline-text">
+                  Final file review, submission and updates until decision.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="services-guarantee">
+        <div class="section-green">
+          <h3>Our Service Guarantee</h3>
+          <p>
+            We promise transparent communication and document-first approach. If we believe a case is
+            too weak or risky, we will tell you upfront.
+          </p>
+          <button class="btn-primary" onclick="showSection('contact')">
+            Book your first call
+          </button>
+        </div>
+      </section>
+    </section>
+
+    <!-- COUNTRIES PAGE -->
+    <section id="countries" class="page-section">
+      <section>
+        <div class="section-header">
+          <div class="eyebrow">Countries We Serve</div>
+          <h2 class="section-title">Explore your global options</h2>
+          <p class="section-subtitle">
+            Choose from popular study and migration destinations based on your profile and goals.
+          </p>
+        </div>
+
+        <div class="grid">
+          <div class="country-card">
+            <div class="code">US</div>
+            <h3>United States</h3>
+            <p>
+              Top-ranked universities, research opportunities and diverse campus life.
+            </p>
+            <div class="country-meta">
+              <span>🎓 STEM & business programs</span>
+              <span>⏱ 3–6 month process</span>
+            </div>
+          </div>
+
+          <div class="country-card">
+            <div class="code">CA</div>
+            <h3>Canada</h3>
+            <p>
+              PR-friendly policies, post-study work opportunities and student-focused environment.
+            </p>
+            <div class="country-meta">
+              <span>🎓 Diploma & masters options</span>
+              <span>🛂 Study, work & PR</span>
+            </div>
+          </div>
+
+          <div class="country-card">
+            <div class="code">AU</div>
+            <h3>Australia</h3>
+            <p>
+              High quality of life, excellent universities and skilled migration pathways.
+            </p>
+          </div>
+
+          <div class="country-card">
+            <div class="code">UK</div>
+            <h3>United Kingdom</h3>
+            <p>
+              Historic institutions, 1-year masters and graduate work routes.
+            </p>
+          </div>
+
+          <div class="country-card">
+            <div class="code">NZ</div>
+            <h3>New Zealand</h3>
+            <p>
+              Safe, student-friendly and known for its natural beauty.
+            </p>
+          </div>
+
+          <div class="country-card">
+            <div class="code">DE</div>
+            <h3>Germany</h3>
+            <p>
+              Strong engineering and technical programs with comparatively low tuition fees.
+            </p>
+          </div>
+
+          <div class="country-card">
+            <div class="code">IE</div>
+            <h3>Ireland</h3>
+            <p>
+              Growing tech and business hub with post-study work options.
+            </p>
+          </div>
+
+          <div class="country-card">
+            <div class="code">More</div>
+            <p>
+              We also handle other destinations on a case-by-case basis.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="countries-why">
+        <div class="section-soft">
+          <div class="section-header section-header-left">
+            <h2 class="section-title">Why these countries?</h2>
+            <p class="section-subtitle">
+              We regularly track policy and visa updates to recommend countries that offer a good
+              mix of education, work options and quality of life.
+            </p>
+          </div>
+
+          <div class="grid grid-3">
+            <div class="card">
+              <div class="icon-circle">🏫</div>
+              <h3>Education excellence</h3>
+              <p>Strong academic reputation and global recognition.</p>
+            </div>
+            <div class="card">
+              <div class="icon-circle">💼</div>
+              <h3>Career outcomes</h3>
+              <p>Opportunities for internships, post-study work or skilled migration.</p>
+            </div>
+            <div class="card">
+              <div class="icon-circle">😊</div>
+              <h3>Quality of life</h3>
+              <p>Safe, student-friendly environments with good support systems.</p>
+            </div>
+          </div>
+
+          <div class="countries-cta">
+            <button class="btn-primary" onclick="showSection('contact')">
+              Discuss my destination
+            </button>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- VISA TYPES PAGE -->
+    <section id="visa-types" class="page-section">
+      <section>
+        <div class="section-header">
+          <div class="eyebrow">Visa Types & Categories</div>
+          <h2 class="section-title">Find the right path for your profile</h2>
+        </div>
+
+        <div class="grid">
+          <article class="card">
+            <h3>Student Visa</h3>
+            <p>
+              For full-time academic programs in universities, colleges and institutes abroad.
+            </p>
+            <ul class="list">
+              <li>Undergraduate & postgraduate programs</li>
+              <li>Language and pathway courses</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Skilled Worker / PR</h3>
+            <p>
+              For qualified professionals looking to settle abroad through points-based migration.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Visitor & Business</h3>
+            <p>
+              Short-term travel for tourism, family visits or business meetings.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Dependent / Spouse</h3>
+            <p>
+              For spouses and dependents joining a primary applicant overseas.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="visa-timeline">
+        <div class="section-soft">
+          <div class="section-header section-header-left">
+            <h2 class="section-title">Visa process timeline</h2>
+          </div>
+
+          <div class="timeline">
+            <div class="timeline-step">
+              <div class="timeline-badge">1</div>
+              <div>
+                <strong>Profile & goal discussion</strong>
+                <p class="timeline-text">We understand your plan and choose the visa type.</p>
+              </div>
+            </div>
+            <div class="timeline-step">
+              <div class="timeline-badge">2</div>
+              <div>
+                <strong>Documents & forms</strong>
+                <p class="timeline-text">We help you collect documents and complete forms.</p>
+              </div>
+            </div>
+            <div class="timeline-step">
+              <div class="timeline-badge">3</div>
+              <div>
+                <strong>Submission & waiting period</strong>
+                <p class="timeline-text">Your file is submitted and tracked for updates.</p>
+              </div>
+            </div>
+            <div class="timeline-step">
+              <div class="timeline-badge">4</div>
+              <div>
+                <strong>Outcome & next steps</strong>
+                <p class="timeline-text">We guide you on travel and post-visa formalities.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="visa-cta">
+            <button class="btn-primary" onclick="showSection('contact')">
+              Not sure which visa fits me?
+            </button>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- RESOURCES PAGE -->
+    <section id="resources" class="page-section">
+      <section>
+        <div class="section-header">
+          <div class="eyebrow">Immigration Resources</div>
+          <h2 class="section-title">Guides, checklists & tutorials</h2>
+          <p class="section-subtitle">
+            Use these resources to understand the process better. For personalised advice, book a
+            consultation.
+          </p>
+        </div>
+
+        <div class="card resources-download">
+          <h3>Downloadable checklists</h3>
+          <p class="resources-text">
+            Example items – replace with your own PDFs and links.
+          </p>
+          <ul class="list">
+            <li>Generic student visa document checklist (PDF)</li>
+            <li>Sample SOP outline (PDF)</li>
+            <li>Work visa document checklist (PDF)</li>
+          </ul>
+        </div>
+
+        <div class="grid grid-2">
+          <div class="card">
+            <h3>Video tutorials</h3>
+            <p class="resources-text">
+              Embed your YouTube or Loom videos here to explain important topics like SOP writing,
+              funds and timelines.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Frequently asked questions</h3>
+            <details class="faq-item">
+              <summary>Is profile evaluation really free?</summary>
+              <p>Yes. We only charge once you decide to proceed with our services.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Can you guarantee a visa?</summary>
+              <p>No. Decisions are made only by embassies. We focus on building strong, compliant files.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="resources-cta">
+        <div class="section-soft">
+          <h3 class="resources-cta-title">Need personalized guidance?</h3>
+          <p class="resources-cta-text">
+            Resources are a good starting point, but your profile is unique. Book a one-to-one session
+            to discuss your options.
+          </p>
+          <button class="btn-primary" onclick="showSection('contact')">
+            Book a consultation
+          </button>
+        </div>
+      </section>
+    </section>
+
+    <!-- CONTACT PAGE -->
+    <section id="contact" class="page-section">
+      <section>
+        <div class="section-header">
+          <div class="eyebrow">Contact Global Gateway</div>
+          <h2 class="section-title">Let’s talk about your plans</h2>
+        </div>
+
+        <div class="grid grid-2">
+          <div class="card">
+            <h3>Get free consultation</h3>
+            <p class="contact-text">
+              Share your details and our team will contact you within one working day.
+            </p>
+            <form
+              onsubmit="event.preventDefault(); alert('Demo only – connect this form to your backend or email service.');">
+              <div class="form-field">
+                <label class="form-label">Full name</label>
+                <input class="form-input" type="text" required />
+              </div>
+              <div class="form-field">
+                <label class="form-label">Email</label>
+                <input class="form-input" type="email" required />
+              </div>
+              <div class="form-field">
+                <label class="form-label">Phone</label>
+                <input class="form-input" type="text" />
+              </div>
+              <div class="form-field">
+                <label class="form-label">Preferred country</label>
+                <input class="form-input" type="text" placeholder="Canada, Australia, UK..." />
+              </div>
+              <div class="form-field">
+                <label class="form-label">Brief about your profile / plan</label>
+                <textarea class="form-textarea"></textarea>
+              </div>
+              <button type="submit" class="btn-primary form-submit">
+                Schedule a call
+              </button>
+            </form>
+          </div>
+
+          <div class="card">
+            <h3>Visit our office</h3>
+            <p class="contact-text">
+              You can customise this with your exact address and map embed.
+            </p>
+            <p class="contact-address">
+              2nd Floor, Example Business Center,<br />
+              Main Road, Hyderabad – 500000<br />
+              Telangana, India
+            </p>
+            <p class="contact-address">
+              Phone: +91-90000-00000<br />
+              Email: info@globalgateway.com
+            </p>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- BLOG PAGE -->
+    <section id="blog" class="page-section">
+      <section>
+        <div class="section-header">
+          <div class="eyebrow">Immigration Blog & Updates</div>
+          <h2 class="section-title">Learn more before you apply</h2>
+        </div>
+
+        <div class="card blog-featured">
+          <h3>Featured Article</h3>
+          <p class="blog-text">
+            Example: “Complete Guide to Studying in Canada in 2025” – replace this with your real blog
+            posts.
+          </p>
+          <button class="btn-outline blog-btn">Read full guide</button>
+        </div>
+
+        <div class="grid">
+          <article class="card">
+            <h3>Top universities in Australia for international students</h3>
+            <p class="blog-text">
+              Short description of the article goes here.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Canada vs UK: Which is better for your masters?</h3>
+            <p class="blog-text">
+              Short description of the article goes here.
+            </p>
+          </article>
+          <article class="card">
+            <h3>IELTS vs TOEFL – which test should you choose?</h3>
+            <p class="blog-text">
+              Short description of the article goes here.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="blog-cta">
+        <div class="section-soft">
+          <h3 class="blog-cta-title">Ready to start your immigration journey?</h3>
+          <p class="blog-cta-text">
+            Reading is a good first step. The next step is getting advice based on your actual profile.
+          </p>
+          <button class="btn-primary" onclick="showSection('contact')">
+            Get expert guidance
+          </button>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-main">
+        <div>
+          <div class="footer-title">Global Gateway Overseas</div>
+          <p class="footer-text">
+            A consultancy-style demo website inspired by your reference layout. Replace all placeholder
+            content with your own branding.
+          </p>
+        </div>
+        <div>
+          <div class="footer-title">Quick Links</div>
+          <div class="footer-links">
+            <a href="#" onclick="showSection('home')">Home</a>
+            <a href="#" onclick="showSection('about')">About</a>
+            <a href="#" onclick="showSection('services')">Services</a>
+            <a href="#" onclick="showSection('countries')">Countries</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-title">Our Services</div>
+          <div class="footer-links">
+            <span>Student Visa</span>
+            <span>Work & PR</span>
+            <span>Visitor Visa</span>
+          </div>
+        </div>
+        <div>
+          <div class="footer-title">Contact Info</div>
+          <div class="footer-links">
+            <span>📍 Hyderabad, Telangana</span>
+            <span>📞 +91-90000-00000</span>
+            <span>✉️ info@globalgateway.com</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> Global Gateway Overseas. All rights reserved.</span>
+        <span>Privacy Policy · Terms</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
