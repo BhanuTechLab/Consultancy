@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Global Gateway Overseas – Immigration Consultancy</title>
+  <title>Global North Overseas</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -22,7 +22,7 @@
       </div>
       <div class="topbar-right">
         <div class="topbar-chip">
-          <span>📞</span><span>+91 9347856661 </span>
+          <span>📞</span><span>+91-90000-00000</span>
         </div>
         <div class="topbar-chip">
           <span>✉️</span><span>info@globalgateway.com</span>
@@ -35,25 +35,27 @@
   <header>
     <nav class="nav">
       <div class="nav-left">
-        <div class="logo-circle">GNO</div>
+        <div class="logo-circle">
+          <img src="logo.png"></div></div>
         <div class="brand-text">
-          <strong>Global North Overseas</strong>
+          <strong>Global North Overseas</strong><br>
           <span>Immigration consultants</span>
         </div>
       </div>
 
+      <!-- NAV LINKS -->
       <div class="nav-links" id="nav-links">
-       <button onclick="showSection('home')" data-target="home">Home</button>
+        <button onclick="showSection('home')" data-target="home" class="active">Home</button>
         <button onclick="showSection('about')" data-target="about">About</button>
         <button onclick="showSection('services')" data-target="services">Services</button>
         <button onclick="showSection('countries')" data-target="countries">Countries</button>
         <button onclick="showSection('visa-types')" data-target="visa-types">Visa Types</button>
         <button onclick="showSection('resources')" data-target="resources">Resources</button>
         <button onclick="showSection('contact')" data-target="contact">Contact</button>
-        <button onclick="showSection('blog')" data-target="blog">Blog</button>
+        <button onclick="showSection('login')" data-target="login">Admin Login</button>
       </div>
 
-      <button class="nav-cta" onclick="showSection('contact')">Free Consultation</button>
+      
 
       <div class="nav-toggle">
         <span></span><span></span><span></span>
@@ -69,15 +71,17 @@
         <div class="hero-grid">
           <div>
             <div class="badge-pill">
-              <span class="dot"></span>
-              Your gateway to global opportunities
-            </div>
-            <h1 class="hero-title">
-              Study, work & settle abroad with <span>trusted guidance.</span>
-            </h1>
+              <h1>Your Gateway to<br> global opportunities</h1>
+            </div><br>
+            <p class="hero-title">
+              Expert immigration consultancy services for students, professionals, and families. We make your dream of living abroad a reality with our proven track record and personalized approach.
+            </p>
+            <br>
             <p class="hero-text">
-              We help students and professionals navigate the complete immigration process –
-              from choosing the right country to submitting a strong visa file.
+              ✅ 100%Success Rate<br><br>
+              ✅ Expert Guidance<br><br>
+              ✅ End-to-end support<br><br>
+              ✅ Transparent Process
             </p>
 
             <div class="hero-actions">
@@ -89,20 +93,15 @@
               </button>
             </div>
 
-            <p class="hero-note">
-              🔒 No charge for the first consultation. We only work with genuine, transparent
-              applications.
-            </p>
+
 
             <form class="hero-form" onsubmit="event.preventDefault(); showSection('contact');">
-              <input type="email" placeholder="Enter your email for a callback" required />
-              <button class="btn-primary" type="submit">Request a call</button>
             </form>
           </div>
 
           <div class="hero-right">
             <div class="hero-photo">
-              😊
+               <img src="welcom.png"></div>
             </div>
             <div class="hero-right-text">
               Get a quick profile review to know your chances for Canada, Australia, UK, USA and more.
@@ -110,29 +109,28 @@
             <div class="hero-guarantee">
               ✅ 100% honest guidance · No fake promises
             </div>
+            <!-- STATS -->
+      <div class="stats-row">
+        <div class="stat-card">
+          <div class="stat-label">5000+</div>
+          <div class="stat-value">Happy Clients</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">10+</div>
+          <div class="stat-value">Countries</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">10+</div>
+          <div class="stat-value">Years Experience</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">24/7</div>
+          <div class="stat-value">Support</div>
           </div>
         </div>
       </div>
+   </div>
 
-      <!-- STATS -->
-      <div class="stats-row">
-        <div class="stat-card">
-          <div class="stat-label">Happy Clients</div>
-          <div class="stat-value">5000+</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-label">Years of Experience</div>
-          <div class="stat-value">15+</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-label">Countries Covered</div>
-          <div class="stat-value">10+</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-label">Support</div>
-          <div class="stat-value">24/7</div>
-        </div>
-      </div>
 
       <!-- IMMIGRATION SERVICES (CARDS) -->
       <section>
@@ -730,31 +728,31 @@
             <p class="contact-text">
               Share your details and our team will contact you within one working day.
             </p>
-            <form
-              onsubmit="event.preventDefault(); alert('Demo only – connect this form to your backend or email service.');">
+            <form id="contact-form">
               <div class="form-field">
                 <label class="form-label">Full name</label>
-                <input class="form-input" type="text" required />
+                <input class="form-input" name="name" type="text" required />
               </div>
               <div class="form-field">
                 <label class="form-label">Email</label>
-                <input class="form-input" type="email" required />
+                <input class="form-input" name="email" type="email" required />
               </div>
               <div class="form-field">
                 <label class="form-label">Phone</label>
-                <input class="form-input" type="text" />
+                <input class="form-input" name="phone" type="text" />
               </div>
               <div class="form-field">
                 <label class="form-label">Preferred country</label>
-                <input class="form-input" type="text" placeholder="Canada, Australia, UK..." />
+                <input class="form-input" name="country" type="text" placeholder="Canada, Australia, UK..." />
               </div>
               <div class="form-field">
                 <label class="form-label">Brief about your profile / plan</label>
-                <textarea class="form-textarea"></textarea>
+                <textarea class="form-textarea" name="message"></textarea>
               </div>
               <button type="submit" class="btn-primary form-submit">
                 Schedule a call
               </button>
+              <p id="contact-success" class="form-success"></p>
             </form>
           </div>
 
@@ -772,6 +770,90 @@
               Phone: +91-90000-00000<br />
               Email: info@globalgateway.com
             </p>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- LOGIN PAGE -->
+    <section id="login" class="page-section">
+      <section>
+        <div class="section-header">
+          <div class="eyebrow">Admin Access</div>
+          <h2 class="section-title">Login to Admin Dashboard</h2>
+          <p class="section-subtitle">
+            Enter the admin PIN and password to view registrations submitted on this website.
+          </p>
+        </div>
+
+        <div class="grid grid-2">
+          <div class="card">
+            <h3>Admin login</h3>
+            <form id="login-form">
+              <div class="form-field">
+                <label class="form-label">Admin PIN</label>
+                <input class="form-input" type="password" name="pin" required />
+              </div>
+              <div class="form-field">
+                <label class="form-label">Password</label>
+                <input class="form-input" type="password" name="password" required />
+              </div>
+              <button type="submit" class="btn-primary form-submit">
+                Login as admin
+              </button>
+              <p id="login-error" class="form-error"></p>
+            </form>
+          </div>
+
+          <div class="card">
+            <h3>How this works</h3>
+            <p class="contact-text">
+              This is a demo admin panel without a real backend. All registrations are stored only in
+              your browser using <strong>localStorage</strong>.
+            </p>
+            <ul class="list">
+              <li>Contact form submissions are saved as “registrations”.</li>
+              <li>After logging in, you can see them in the Admin Dashboard.</li>
+              <li>Refreshing the page keeps data (until browser storage is cleared).</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- ADMIN DASHBOARD -->
+    <section id="admin-dashboard" class="page-section">
+      <section>
+        <div class="section-header">
+          <div class="eyebrow">Admin Dashboard</div>
+          <h2 class="section-title">Registered leads</h2>
+          <p class="section-subtitle">
+            These are the enquiries submitted via the Contact form. Data is stored locally in this
+            browser only.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="admin-toolbar">
+            <span id="admin-status">Not logged in</span>
+            <button type="button" class="btn-outline" id="logout-btn">Log out</button>
+          </div>
+
+          <div class="table-wrapper">
+            <table class="admin-table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Phone</th>
+                  <th>Preferred country</th>
+                  <th>Message</th>
+                </tr>
+              </thead>
+              <tbody id="admin-table-body"></tbody>
+            </table>
+            <p id="admin-empty" class="admin-empty">No registrations yet.</p>
           </div>
         </div>
       </section>
