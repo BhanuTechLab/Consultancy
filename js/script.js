@@ -1,4 +1,4 @@
-const ADMIN_PIN = "bhanu99517";
+const ADMIN_PIN = "9347856661";
 const ADMIN_PASSWORD = "qwe123mnb890";
 
 let adminLoggedIn = false;
