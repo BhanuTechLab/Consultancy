@@ -465,7 +465,7 @@ section {
   background: #6495ED;
   border-radius: var(--radius-md);
   padding: 0.8rem 0.9rem;
-  text-align: left;
+  text-align: center;
   box-shadow: 0 1px 0 rgba(148, 163, 184, 0.35);
 }
 
@@ -484,6 +484,7 @@ section {
 .start-card {
   background: #6495ED;
   border-radius: var(--radius-md);
+  max-width: 100%;
   padding: 0.8rem 1.8rem;
   text-align: center;
   box-shadow: 0 1px 0 rgba(148, 163, 184, 0.35);
