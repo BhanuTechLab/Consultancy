@@ -481,11 +481,23 @@ section {
   color: white;
 }
 
+.starts-row {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 2.1rem;
+}
+
+@media (min-width: 720px) {
+  .starts-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 .start-card {
   background: #6495ED;
   border-radius: var(--radius-md);
-  max-width: 100%;
-  padding: 0.8rem 1.8rem;
+  padding: 0.8rem 0.9rem;
   text-align: center;
   box-shadow: 0 1px 0 rgba(148, 163, 184, 0.35);
 }
